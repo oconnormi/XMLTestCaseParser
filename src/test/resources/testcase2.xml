@@ -1,0 +1,16 @@
+<TestCase>
+    <type>JerseyTestProcessor</type>
+    <endpoint>https://google.com</endpoint>
+    <test>
+        This is some stuff
+        Hopefully this works
+        {
+            "stuff in here": "stuff stuff stuff"
+        }
+        let's see
+    </test>
+    <assertions>
+        ValidHTTPStatusCodesAssertion::200
+        InvalidHTTPStatusCodeAssertion::403
+    </assertions>
+</TestCase>

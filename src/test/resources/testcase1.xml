@@ -1,0 +1,19 @@
+<TestCase>
+    <type>JerseyTestProcessor</type>
+    <endpoint>https://google.com</endpoint>
+    <test>
+        <operation>GET</operation>
+        <example>stuff</example>
+        <body>
+            {
+                "example": "some payload stuff in here"
+            }
+        </body>
+        <headers>
+            Some header values
+        </headers>
+    </test>
+    <assertions>
+        <assertion>ValidHTTPStatusCodesAssertion::200</assertion>
+    </assertions>
+</TestCase>
